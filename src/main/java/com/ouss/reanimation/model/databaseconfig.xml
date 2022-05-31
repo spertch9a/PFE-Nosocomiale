@@ -1,7 +1,0 @@
-<DataBaseConfiguration>
-	<HibernateConfigFile>src/main/java/com/ouss/reanimation/model/hibernate.cfg.xml</HibernateConfigFile>
-	<DescriptionMappingFile>src/main/java/com/ouss/reanimation/model/TraumaDescription.hbm.xml</DescriptionMappingFile>
-	<DescriptionClassName>com.ouss.reanimation.model.TraumaDescription</DescriptionClassName>
-	<SolutionMappingFile>src/main/java/com/ouss/reanimation/model/TraumaSolution.hbm.xml</SolutionMappingFile>
-	<SolutionClassName>com.ouss.reanimation.model.TraumaSolution</SolutionClassName>
-</DataBaseConfiguration>
