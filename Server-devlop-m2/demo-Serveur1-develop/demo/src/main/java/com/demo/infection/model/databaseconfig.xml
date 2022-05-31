@@ -1,0 +1,7 @@
+<DataBaseConfiguration>
+	<HibernateConfigFile>demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/hibernate.cfg.xml</HibernateConfigFile>
+	<DescriptionMappingFile>demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseDescription.hbm.xml</DescriptionMappingFile>
+	<DescriptionClassName>com.demo.infection.model.CaseDescription</DescriptionClassName>
+	<SolutionClassName>com.demo.infection.model.CaseSolution</SolutionClassName>
+	<SolutionMappingFile>demo-Serveur1-develop/demo/src/main/java/com/demo/infection/model/caseSolution.hbm.xml</SolutionMappingFile>
+</DataBaseConfiguration>

@@ -1,0 +1,207 @@
+/*C1*/SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(0,2147483647,0)
+COMMIT
+/*C2*/SET SCHEMA PUBLIC
+CREATE TABLE  casebase (id int,nip varchar(50),j varchar(50),sa varchar(50),t double,ht varchar(50),aus varchar(50),des varchar(50),kt varchar(50),abl varchar(50),infkt varchar(50),sec varchar(50),msec varchar(50),tou varchar(50),dys varchar(50),su varchar(50),pyu varchar(50),brm varchar(50),dsp varchar(50),fr varchar(50),lu varchar(50),gb double,crp double,pct double,rx varchar(50),p Integer,u Integer,b Integer,skt Integer,autr Integer,pas Integer,conf Integer,PRIMARY KEY (id))
+create table requete (nip varchar(50),j varchar(50),sa varchar(50),t double,ht varchar(30),aus varchar(20),des varchar(30),kt varchar(30),abl varchar(30),infkt varchar(30),sec varchar(30),msec varchar(30),tou varchar(30),dys varchar(30),su varchar(30),pyu varchar(30),brm varchar(30),dsp varchar(30),fr varchar(30),lu varchar(30),gb double,crp double,pct double,rx varchar(30))
+create table solution (p Integer,u Integer,b Integer,skt Integer,autr Integer,pas Integer,conf Integer)
+INSERT INTO CASEBASE VALUES(1,'3121490248','19/06/2021','true',38.7E0,'false','true','true','true','false','false','true','true','false','false','true','false','false','false','false','false',22.0E0,137.0E0,53.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(2,'3121490248','08/06/2021','false',39.0E0,'false','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',17.0E0,332.0E0,-1.0E0,'true',0,0,0,0,1,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(3,'3121490248','05/07/2021','true',38.9E0,'false','false','true','true','false','false','true','true','false','false','true','false','false','false','false','false',26.0E0,147.0E0,-1.0E0,'false',0,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(4,'3121496905','19/07/2021','true',40.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',30.0E0,57.0E0,3.9E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(5,'3121496905','27/07/2021','true',38.8E0,'false','false','false','true','false','false','false','false','false','false','true','true','false','false','false','false',14.0E0,-1.0E0,7.8E0,'false',0,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(6,'3121482520','19/04/2021','false',38.5E0,'true','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',27.0E0,-1.0E0,-1.0E0,'true',0,0,0,0,1,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(7,'3121482520','26/04/2021','true',38.5E0,'false','true','false','true','false','false','false','true','false','false','true','false','false','false','false','false',18.0E0,-1.0E0,1.5E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(8,'3118313558','13/07/2021','false',38.6E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',22.0E0,-1.0E0,-1.0E0,'false',0,0,0,0,1,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(9,'3118313558','19/07/2021','true',39.6E0,'false','true','true','true','false','false','true','true','false','false','true','false','false','false','true','false',20.0E0,-1.0E0,-1.0E0,'true',1,0,1,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(10,'3118313558','25/07/2021','true',38.0E0,'false','false','false','true','false','false','false','false','false','false','true','true','false','false','false','false',36.0E0,-1.0E0,-1.0E0,'false',0,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(11,'3121484613','05/05/2021','true',38.0E0,'true','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',18.0E0,34.0E0,-1.0E0,'false',0,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(12,'3116226491','09/05/2021','true',39.0E0,'false','true','true','true','false','false','true','true','true','true','true','false','false','false','false','false',-1.0E0,19.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(13,'3121487998','28/05/2021','true',38.4E0,'false','false','false','true','false','false','true','false','false','true','true','false','false','false','false','false',-1.0E0,144.0E0,0.51E0,'true',1,0,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(14,'3113014587','18/06/2021','true',38.5E0,'false','false','false','true','false','false','true','true','false','false','true','true','false','false','false','false',13.0E0,-1.0E0,-1.0E0,'true',1,1,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(15,'3121487561','06/06/2021','true',38.5E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',13.44E0,88.0E0,-1.0E0,'true',1,0,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(16,'3121487561','16/06/2021','true',38.5E0,'false','true','false','true','false','false','false','false','false','false','true','false','false','false','false','true ',19.0E0,-1.0E0,-1.0E0,'true',1,1,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(17,'3113076674','04/05/2021','true',40.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','true','false',12.0E0,-1.0E0,-1.0E0,'false',0,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(18,'3121482520','27/06/2021','true',36.2E0,'false','true','false','true','false','false','true','true','true','false','true','false','false','false','false','false',19.0E0,-1.0E0,5.8E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(19,'3121482520','07/07/2021','true',35.0E0,'false','true','false','true','false','false','false','false','false','false','true','false','false','false','false','false',27.0E0,-1.0E0,3.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(20,'3121472740','16/03/2021','true',38.0E0,'false','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',3.0E0,195.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(21,'3121476377','11/03/2021','true',38.1E0,'true','true','true','true','false','false','false','false','false','false','true','false','false','false','false','false',25.0E0,99.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(22,'3113098057','22/04/2021','true',37.0E0,'false','false','true','true','false','false','false','false','false','false','true','false','false','false','false','false',21.0E0,-1.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(23,'3121478473','26/03/2021','true',39.0E0,'false','true','true','true','false','false','true','true','false','false','true','false','false','false','false','false',20.0E0,142.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(24,'3121478473','08/04/2021','true',39.0E0,'true','true','true','false','false','false','false','false','false','false','true','false','false','false','false','false',28.0E0,229.0E0,-1.0E0,'true',1,0,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(25,'3121478497','26/03/2021','true',38.0E0,'false','false','true','false','false','false','true','true','false','false','true','false','false','false','false','false',20.0E0,223.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(26,'3121478497','06/04/2021','true',40.0E0,'true','false','true','false','false','false','true','true','false','false','true','false','false','false','false','false',25.0E0,-1.0E0,-1.0E0,'true',1,0,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(27,'3121476238','15/03/2021','true',40.0E0,'true','false','true','false','false','false','true','false','false','true','true','false','false','false','false','false',-1.0E0,94.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(28,'3121476238','22/03/2021','true',41.0E0,'true','false','true','false','false','false','false','false','false','false','true','false','false','false','false','false',20.0E0,106.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(29,'3121477783','10/08/2021','true',39.0E0,'false','false','false','true','false','true','false','false','false','false','false','false','false','false','true','false',-1.0E0,-1.0E0,40.0E0,'false',0,0,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(30,'3121481988','18/04/2021','true',38.0E0,'false','false','true','false','false','false','true','false','false','false','true','false','false','false','false','false',-1.0E0,253.0E0,4.45E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(31,'3121481988','26/04/2021','true',39.1E0,'true','true','true','false','false','false','true','true','false','false','true','false','false','false','false','false',22.0E0,-1.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(32,'3120466162','26/02/2021','true',38.3E0,'false','true','true','false','false','false','false','false','false','false','true','false','false','false','false','false',15.0E0,63.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(33,'3121475939','15/03/2021','true',38.9E0,'true','false','true','false','false','false','false','false','false','false','true','false','false','false','false','true',24.0E0,46.7E0,-1.0E0,'false',1,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(34,'3121479493','12/04/2021','true',40.0E0,'false','false','true','false','false','false','false','false','false','false','true','false','false','false','false','false',2.5E0,250.0E0,-1.0E0,'false',1,0,1,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(35,'3121473986','23/02/2021','true',39.0E0,'true','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',19.0E0,-1.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(36,'3121481503','15/04/2021','true',39.8E0,'true','false','true','false','false','false','false','false','false','false','true','false','false','false','false','false',23.0E0,321.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(37,'3117260317','21/01/2020','true',38.0E0,'true','true','true','true','false','false','false','false','false','false','true','false','false','false','false','false',16.0E0,70.0E0,-1.0E0,'true',1,0,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(38,'3119385226','10/02/2022','true',38.2E0,'true','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',-1.0E0,123.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(39,'3120429489','19/02/2020','true',39.8E0,'false','true','true','true','false','false','true','true','false','false','true','false','false','false','false','false',7.0E0,-1.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(40,'3120429859','22/02/2020','true',40.0E0,'true','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',16.0E0,469.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(41,'3120429859','29/02/2020','true',39.0E0,'false','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',3.0E0,-1.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(42,'3120429859','15/03/2020','true',38.0E0,'true','true','true','false','true','true','true','true','false','false','true','false','false','false','false','false',9.0E0,-1.0E0,-1.0E0,'false',1,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(43,'3120433626','17/03/2020','true',39.2E0,'true','true','true','true','false','false','false','false','false','false','true','false','false','false','false','true',18.0E0,-1.0E0,-1.0E0,'false',1,1,0,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(44,'3114123191','18/02/2020','true',39.8E0,'true','false','true','true','false','false','true','false','false','false','true','false','false','false','false','false',16.0E0,-1.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(45,'3119414441','26/11/2019','true',40.2E0,'true','true','true','true','false','false','true','false','false','false','true','false','false','false','false','false',15.0E0,-1.0E0,-1.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(46,'3120428081','14/02/2020','true',41.1E0,'false','false','false','true','false','false','false','false','false','false','true','true','false','false','true','true',4.0E0,-1.0E0,-1.0E0,'false',0,1,1,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(47,'3119415743','21/02/2021','true',38.5E0,'true','true','true','true','false','false','false','false','false','false','true','false','false','false','false','false',19.0E0,-1.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(48,'3119416814','24/12/2019','true',38.5E0,'true','true','true','false','false','false','false','false','false','false','false','false','false','false','true','false',3.0E0,226.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(49,'3119420149','20/01/2020','true',38.8E0,'false','false','false','false','false','false','false','false','false','false','true','true','false','false','true','false',10.0E0,85.3E0,-1.0E0,'false',0,1,1,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(50,'3119420149','21/02/2020','true',40.0E0,'true','true','true','false','false','false','true','false','false','false','false','false','false','false','false','false',16.0E0,-1.0E0,-1.0E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(51,'3119420149','07/03/2020','true',39.4E0,'true','true','true','true','true','true','true','false','false','false','true','true','false','false','false','false',15.0E0,-1.0E0,-1.0E0,'true ',1,1,0,1,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(52,'1','01/01/1900','true',-1.0E0,'false','false','false','false','false','false','true','false','false','false','true','false','false','false','false','false',13.0E0,-1.0E0,1.2E0,'false',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(53,'2','02/01/1900','true',34.0E0,'true','false','false','false','true','true','false','false','false','false','true','true','false','false','true','false',22.0E0,-1.0E0,-1.0E0,'true',1,1,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(54,'3','03/01/1900','false',39.2E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',-1.0E0,-1.0E0,0.9E0,'true',0,0,0,0,1,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(55,'4','04/01/1900','true',34.5E0,'true','false','false','false','false','false','false','false','false','false','true','false','false','false','true','false',-1.0E0,-1.0E0,-1.0E0,'false',0,0,1,0,0,0,1)
+COMMIT
+INSERT INTO CASEBASE VALUES(56,'5','05/01/1900','true',40.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',-1.0E0,-1.0E0,1.5E0,'false',0,0,0,0,1,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(57,'6','06/01/1900','true',-1.0E0,'false','false','false','false','true','false','false','false','false','false','true','false','false','false','false','false',-1.0E0,-1.0E0,40.0E0,'false',0,0,0,0,1,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(58,'7','07/01/1900','true',-1.0E0,'false','false','false','true','false','false','false','false','false','false','true','true','true','true','false','true',-1.0E0,33.0E0,8.1E0,'false',0,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(59,'8','08/01/1900','true',38.5E0,'false','true','true','true','false','false','true','true','true','true','true','false','false','false','false','false',-1.0E0,-1.0E0,4.6E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(60,'9','09/01/1900','true',-1.0E0,'true','false','false','false','false','false','false','false','false','false','true','false','false','false','true','false',3.5E0,210.0E0,-1.0E0,'false',0,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(61,'10','10/01/1900','true',-1.0E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','false','false','false',-1.0E0,-1.0E0,30.0E0,'false',0,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(62,'11','11/01/1900','true',-1.0E0,'true','false','false','false','false','false','false','true','false','false','false','false','false','false','true','false',-1.0E0,-1.0E0,-1.0E0,'true',1,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(63,'12','12/01/1900','true',38.4E0,'false','true','true','false','false','false','false','true','false','false','false','false','false','false','true','false',20.0E0,-1.0E0,-1.0E0,'false',1,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(64,'13','13/01/1900','true',37.0E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','true','false','true',12.0E0,7.0E0,2.1E0,'false',0,1,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(65,'14','14/01/1900','true',-1.0E0,'false','false','false','true','false','false','false','false','false','true','true','false','false','false','false','false',-1.0E0,-1.0E0,3.0E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(66,'15','15/01/1900','true',-1.0E0,'false','false','false','false','false','false','false','false','false','false','true','true','false','true','false','false',19.0E0,12.0E0,-1.0E0,'false',0,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(67,'16','16/01/1900','true',38.5E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','false','false','false',-1.0E0,-1.0E0,7.1E0,'false',0,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(68,'17','17/01/1900','true',40.0E0,'false','false','false','false','false','false','false','false','false','false','true','true','true','false','true','false',-1.0E0,7.0E0,-1.0E0,'false',0,1,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(69,'18','18/01/1900','true',38.0E0,'false','false','false','false','true','true','false','false','true','false','false','false','false','false','false','false',23.0E0,8.0E0,-1.0E0,'true',1,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(70,'19','19/01/1900','true',39.0E0,'false','false','false','false','false','false','true','true','true','false','false','false','false','false','true','false',-1.0E0,-1.0E0,-1.0E0,'false',1,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(71,'20','20/01/1900','true',38.5E0,'false','true','true','true','false','false','false','false','false','true','true','true','false','false','true','true',-1.0E0,-1.0E0,5.0E0,'false',1,1,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(72,'21','21/01/1900','true',40.0E0,'false','false','false','true','false','true','false','false','true','false','false','false','false','false','true','false',20.0E0,-1.0E0,-1.0E0,'true',1,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(73,'22','22/01/1900','true',34.0E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','true','false','false',-1.0E0,90.0E0,8.5E0,'false',0,1,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(74,'23','23/01/1900','true',38.6E0,'false','true','true','false','false','false','false','true','false','false','true','false','false','true','false','false',13.0E0,50.0E0,-1.0E0,'false',1,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(75,'24','24/01/1900','true',39.0E0,'false','false','false','false','true','true','false','false','false','false','true','false','false','false','true','false',-1.0E0,-1.0E0,100.0E0,'false',0,0,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(76,'25','25/01/1900','true',39.6E0,'false','false','false','true','false','true','false','false','false','false','true','false','true','true','true','false',-1.0E0,-1.0E0,0.9E0,'false',0,1,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(77,'26','26/01/1900','true',41.0E0,'false','false','true','true','false','true','false','false','true','false','true','false','false','false','true','false',-1.0E0,-1.0E0,-1.0E0,'true',1,0,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(78,'27','27/01/1900','true',34.0E0,'false','true','false','false','true','true','true','true','false','true','true','true','false','false','false','true',-1.0E0,-1.0E0,-1.0E0,'false',1,1,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(79,'28','28/01/1900','false',40.0E0,'false','false','false','true','false','false','true','true','false','false','true','false','false','false','false','false',-1.0E0,10.0E0,-1.0E0,'true',0,0,0,0,1,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(80,'29','29/01/1900','true',37.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',-1.0E0,5.0E0,-1.0E0,'false',0,0,0,0,0,1,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(81,'30','30/01/1900','true',35.0E0,'false','false','false','true','false','true','false','false','true','true','true','false','false','false','false','false',-1.0E0,-1.0E0,8.7E0,'true',1,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(82,'31','31/01/1900','true',-1.0E0,'false','false','true','true','false','false','true','true','false','false','true','false','true','false','false','true',27.0E0,-1.0E0,-1.0E0,'false',1,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(83,'32','01/02/1900','true',39.0E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','false','false','false',24.0E0,7.0E0,-1.0E0,'false',0,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(84,'33','02/02/1900','true',38.2E0,'true','false','false','true','false','false','false','false','false','false','true','false','false','false','true','false',36.0E0,80.0E0,-1.0E0,'false',0,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(85,'34','03/02/1900','true',37.5E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','false','true','false',3.2E0,30.0E0,-1.0E0,'false',0,0,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(86,'35','04/02/1900','true',38.7E0,'false','false','false','false','true','false','false','false','false','false','true','false','false','true','false','true',17.0E0,9.0E0,-1.0E0,'false',0,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(87,'36','05/02/1900','true',39.2E0,'false','false','false','true','false','true','false','false','false','false','true','true','true','false','false','false',33.0E0,17.0E0,-1.0E0,'false',0,1,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(88,'37','06/02/1900','true',39.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','true','false','true','true',50.0E0,40.0E0,-1.0E0,'false',0,1,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(89,'38','07/02/1900','true',37.0E0,'false','false','false','true','false','true','false','false','false','false','true','false','false','true','true','false',-1.0E0,-1.0E0,0.6E0,'false',0,1,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(90,'39','08/02/1900','true',40.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',-1.0E0,-1.0E0,0.9E0,'true',1,0,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(91,'40','09/02/1900','true',34.4E0,'false','false','false','true','false','true','true','true','true','false','true','false','false','false','false','false',11.0E0,-1.0E0,-1.0E0,'false',1,0,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(92,'41','10/02/1900','true',-1.0E0,'false','false','true','true','false','false','false','false','false','true','true','false','false','false','true','false',-1.0E0,-1.0E0,22.0E0,'true',1,0,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(93,'42','11/02/1900','true',37.0E0,'false','true','false','true','false','true','true','true','false','true','true','false','false','false','true','false',-1.0E0,-1.0E0,4.0E0,'false',1,0,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(94,'43','12/02/1900','true',34.0E0,'false','false','true','true','false','false','false','false','true','false','true','false','false','false','false','true',40.0E0,-1.0E0,-1.0E0,'false',1,1,0,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(95,'44','13/02/1900','true',41.0E0,'true','false','false','true','false','true','false','true','false','false','true','false','true','false','false','true',24.0E0,-1.0E0,-1.0E0,'true',1,1,0,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(96,'45','14/02/1900','true',38.4E0,'false','false','false','true','false','false','true','false','false','true','true','false','false','true','true','false',13.0E0,-1.0E0,-1.0E0,'false',1,1,1,0,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(97,'46','15/02/1900','true',39.1E0,'false','true','false','true','false','true','true','false','false','false','true','true','false','false','true','true',3.5E0,-1.0E0,-1.0E0,'true',1,1,1,1,0,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(98,'47','16/02/1900','true',38.6E0,'true','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',3.4E0,-1.0E0,10.0E0,'false',0,0,0,0,1,0,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(99,'48','17/02/1900','true',36.0E0,'false','false','false','true','false','false','false','false','false','false','true','false','false','false','false','false',-1.0E0,4.0E0,-1.0E0,'false',0,0,0,0,0,1,0)
+COMMIT
+INSERT INTO CASEBASE VALUES(100,'4555','1254','true',37.0E0,'true','true','false','true','true','false','false','false','false','false','false','true','false','true','true','false',15.0E0,22.0E0,20.0E0,'false',1,0,1,0,0,0,0)
+COMMIT
