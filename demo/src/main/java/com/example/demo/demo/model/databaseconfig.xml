@@ -1,0 +1,7 @@
+<DataBaseConfiguration>
+	<HibernateConfigFile>C:\Users\Oussama\Documents\GitHub\PFE-Nosocomiale\demo\src\main\java\com\example\demo\demo\model\hibernate.cfg.xml</HibernateConfigFile>
+	<DescriptionMappingFile>C:\Users\Oussama\Documents\GitHub\PFE-Nosocomiale\demo\src\main\java\com\example\demo\demo\model\caseDescription.hbm.xml</DescriptionMappingFile>
+	<DescriptionClassName>com.example.demo.demo.model.caseDescription</DescriptionClassName>
+	<SolutionClassName>com.example.demo.demo.model.caseSolution</SolutionClassName>
+	<SolutionMappingFile>C:\Users\Oussama\Documents\GitHub\PFE-Nosocomiale\demo\src\main\java\com\example\demo\demo\model\caseSolution.hbm.xml</SolutionMappingFile>
+</DataBaseConfiguration>
