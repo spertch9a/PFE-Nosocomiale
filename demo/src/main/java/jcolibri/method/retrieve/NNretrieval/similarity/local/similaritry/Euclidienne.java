@@ -1,36 +1,21 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
+package jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
 
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
+import jcolibri.exception.NoApplicableSimilarityFunctionException;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 
-public class Euclidienne implements LocalSimilarityFunction {
+public class Euclidienne implements  LocalSimilarityFunction{
 	double g;
 	
-	/*
+	
+	@Override
 	public double compute(Object caseObject, Object queryObject) throws NoApplicableSimilarityFunctionException {
 		g=Math.sqrt(Math.abs((Math.pow((double) caseObject, 2))-(Math.pow((double) queryObject, 2))));
 		double m = (double)caseObject+(double)queryObject;
-		
+		System.out.println(g/m);
 		return g/m;
 		
 	}
-	*/
-
-	public double compute(Object caseObject, Object queryObject) throws NoApplicableSimilarityFunctionException {
-		if(caseObject instanceof Integer && queryObject instanceof Integer) {
-			g = Math.sqrt(Math.abs((Math.pow((int) caseObject, 2)) - (Math.pow((int) queryObject, 2))));
-			double m = (int) caseObject + (int) queryObject;
-
-			return g / m;
-		}
-		else{
-			g = Math.sqrt(Math.abs((Math.pow((double) caseObject, 2)) - (Math.pow((double) queryObject, 2))));
-			double m = (double) caseObject + (double) queryObject;
-
-			return g / m;
-		}
-
-	}
+	@Override
 	public boolean isApplicable(Object caseObject, Object queryObject) {
 		// TODO Auto-generated method stub
 		return false;

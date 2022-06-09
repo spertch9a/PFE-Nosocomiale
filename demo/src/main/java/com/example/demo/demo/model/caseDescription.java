@@ -1,8 +1,8 @@
 package com.example.demo.demo.model;
 
 
-import es.ucm.fdi.gaia.jcolibri.cbrcore.Attribute;
-import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.cbrcore.CaseComponent;
 
 public class caseDescription implements CaseComponent {
 

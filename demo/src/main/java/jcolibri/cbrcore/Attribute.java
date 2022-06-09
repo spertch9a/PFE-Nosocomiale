@@ -6,13 +6,11 @@
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.cbrcore;
-
-import com.demo.infection.jcolibri.exception.AttributeAccessException;
+package jcolibri.cbrcore;
 
 import java.lang.reflect.Field;
 
-//import com.demo.infection.jcolibri.exception.AttributeAccessException;
+import jcolibri.exception.AttributeAccessException;
 
 /**
  * This class identifies an attribute of a CaseComponent (Java Bean).
@@ -43,13 +41,8 @@ public class Attribute {
 	 */
 	public Attribute(String attributeName, Class _class)
 	{
-		//JOptionPane.showConfirmDialog(null, "attributeName : "+attributeName);
 		try {
-			//JOptionPane.showConfirmDialog(null, "a : "+_class.getName());
-			
-			field = (Field)_class.getDeclaredField(attributeName);
-			
-			//JOptionPane.showConfirmDialog(null, "b");
+			field = _class.getDeclaredField(attributeName);
 		} catch (Exception e) {
 			org.apache.commons.logging.LogFactory.getLog(this.getClass()).error(e + "Attribute: "+ attributeName+ " Class:" + _class.getName());
 		}

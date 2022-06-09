@@ -1,9 +1,8 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local;
+package jcolibri.method.retrieve.NNretrieval.similarity.local;
 
 
 
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 
 /**
  * This function returns 1 if both String are the same despite case letters, 0
@@ -20,13 +19,13 @@ public class EqualsStringIgnoreCase implements LocalSimilarityFunction {
 	 *            String
 	 * @return the result of apply the similarity function.
 	 */
-	public double compute(Object s, Object t) throws NoApplicableSimilarityFunctionException {
+	public double compute(Object s, Object t) throws jcolibri.exception.NoApplicableSimilarityFunctionException {
 		if ((s == null) || (t == null))
 			return 0;
 		if (!(s instanceof String))
-			throw new NoApplicableSimilarityFunctionException(this.getClass(), s.getClass());
+			throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), s.getClass());
 		if (!(t instanceof String))
-			throw new NoApplicableSimilarityFunctionException(this.getClass(), t.getClass());
+			throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), t.getClass());
 
 		return (((String) s).equalsIgnoreCase(((String) t)) ? 1 : 0);
 	}

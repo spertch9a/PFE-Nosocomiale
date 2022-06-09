@@ -1,4 +1,4 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces;
+package jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces;
 
 /**
  * String distances that implement this interface are metrics, which means:

@@ -1,4 +1,4 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local;
+package jcolibri.method.retrieve.NNretrieval.similarity.local;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -6,10 +6,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
-import com.demo.infection.jcolibri.util.FileIO;
 import org.apache.commons.logging.LogFactory;
+
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 
 /**
  * Similarity function that uses a table to obtain the similarity between two values. 
@@ -30,7 +29,7 @@ public class Table implements LocalSimilarityFunction
     {
 	try
 	{
-	    InputStream is = FileIO.openFile(filename);
+	    InputStream is = jcolibri.util.FileIO.openFile(filename);
 	    BufferedReader br = null;
 	    br = new BufferedReader(new InputStreamReader(is));
 	    if (br == null)
@@ -70,14 +69,14 @@ public class Table implements LocalSimilarityFunction
      * @param queryObject is a String or Enum
      * @return result of apply the similarity function.
      */
-    public double compute(Object caseObject, Object queryObject) throws NoApplicableSimilarityFunctionException
+    public double compute(Object caseObject, Object queryObject) throws jcolibri.exception.NoApplicableSimilarityFunctionException
     {
 	if ((caseObject == null) || (queryObject == null))
 		return 0;
 	if (! ((caseObject instanceof String)||(caseObject instanceof Enum)))
-		throw new NoApplicableSimilarityFunctionException(this.getClass(), caseObject.getClass());
+		throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), caseObject.getClass());
 	if (! ((queryObject instanceof String)||(queryObject instanceof Enum)))
-		throw new NoApplicableSimilarityFunctionException(this.getClass(), queryObject.getClass());
+		throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), queryObject.getClass());
 
 	String caseS;
 	String queryS;

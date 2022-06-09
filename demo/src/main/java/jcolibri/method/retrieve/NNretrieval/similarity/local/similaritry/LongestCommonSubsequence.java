@@ -1,7 +1,6 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
+package jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
 
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.StringDistance;
-//import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.StringDistance;
+import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.StringDistance;
 
 /**
  * The longest common subsequence (LCS) problem consists in finding the longest

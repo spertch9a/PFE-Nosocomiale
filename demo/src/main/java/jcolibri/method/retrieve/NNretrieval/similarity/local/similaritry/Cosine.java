@@ -1,17 +1,15 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
+package jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
 
 import java.util.*;
 
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringDistance;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringSimilarity;
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-//import 	demo.demo.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringDistance;
-//import 	demo.demo.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringSimilarity;
+import jcolibri.exception.NoApplicableSimilarityFunctionException;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringDistance;
+import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringSimilarity;
 
 
 
-public class Cosine extends ShingleBased implements NormalizedStringDistance, NormalizedStringSimilarity, LocalSimilarityFunction {
+public class Cosine extends ShingleBased implements NormalizedStringDistance, NormalizedStringSimilarity, LocalSimilarityFunction{
 
 /**
 * Implements Cosine Similarity between strings. The strings are first
@@ -70,7 +68,7 @@ return dotProduct(profile1, profile2)
 
 
 /**
-* Compute the norm L2 : sqrt(Sum_i( v_iï¿½)).
+* Compute the norm L2 : sqrt(Sum_i( v_i²)).
 *
 * @param profile
 * @return L2 norm
@@ -111,6 +109,8 @@ return agg;
 
 /**
 * Return 1.0 - similarity.
+* @param s1 The first string to compare.
+* @param s2 The second string to compare.
 * @return 1.0 - the cosine similarity in the range [0, 1]
 * @throws NullPointerException if s1 or s2 is null.
 */

@@ -1,15 +1,14 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
-
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringDistance;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringSimilarity;
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-
+package jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
 
 import java.util.Arrays;
 
+import jcolibri.exception.NoApplicableSimilarityFunctionException;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringDistance;
+import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringSimilarity;
+
 /**
- * The Jaroï¿½Winkler distance metric is designed and best suited for short
+ * The Jaro–Winkler distance metric is designed and best suited for short
  * strings such as person names, and to detect typos; it is (roughly) a
  * variation of Damerau-Levenshtein, where the substitution of 2 close
  * characters is considered less important then the substitution of 2 characters
@@ -20,7 +19,7 @@ import java.util.Arrays;
  * @author Thibault Debatty
  */
 
-public class JaroWinkler  implements NormalizedStringSimilarity, NormalizedStringDistance, LocalSimilarityFunction {
+public class JaroWinkler  implements NormalizedStringSimilarity, NormalizedStringDistance,LocalSimilarityFunction  {
 
     private static final double DEFAULT_THRESHOLD = 0.7;
     private static final int THREE = 3;

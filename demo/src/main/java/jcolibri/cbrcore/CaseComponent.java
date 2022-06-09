@@ -6,7 +6,7 @@
  * http://gaia.fdi.ucm.es
  * 05/01/2007
  */
-package com.demo.infection.jcolibri.cbrcore;
+package jcolibri.cbrcore;
 
 /**
  * Interface that defines a component of a case. Cases are composed by instances of this interface. 
@@ -19,7 +19,6 @@ public interface CaseComponent {
 	/**
 	 * Returns the attribute that identifies the component. 
 	 * An id-attribute must be unique for each component.
-     * @return
-     */
-	com.demo.infection.jcolibri.cbrcore.Attribute getIdAttribute();
+	 */
+	Attribute getIdAttribute();
 }

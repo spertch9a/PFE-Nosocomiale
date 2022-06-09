@@ -6,7 +6,7 @@
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.exception;
+package jcolibri.exception;
 
 /**
  * Exception in the execution of a method.

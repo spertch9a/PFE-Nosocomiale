@@ -1,4 +1,4 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
+package jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
 
 import java.util.*;
 import java.util.regex.Pattern;

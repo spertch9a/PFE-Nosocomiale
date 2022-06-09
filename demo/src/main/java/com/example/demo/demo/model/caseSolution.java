@@ -7,7 +7,7 @@ import es.ucm.fdi.gaia.jcolibri.cbrcore.CaseComponent;
 public class caseSolution implements CaseComponent {
 
     //string id
-    int id;
+    String id;
     int p;
     int u;
     int b;
@@ -29,12 +29,12 @@ public class caseSolution implements CaseComponent {
     }
 
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

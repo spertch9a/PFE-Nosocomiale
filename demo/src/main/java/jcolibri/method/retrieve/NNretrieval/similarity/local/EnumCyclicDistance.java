@@ -1,19 +1,15 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local;
+package jcolibri.method.retrieve.NNretrieval.similarity.local;
 
 
 
-//import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-//import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 
-
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 
 /**
  * This function computes the similarity between two enum values as their cyclic
  * distance.
  * 
- * @author Juan A. Recio-Garcï¿½a
+ * @author Juan A. Recio-García
  */
 public class EnumCyclicDistance implements LocalSimilarityFunction {
 
@@ -28,13 +24,13 @@ public class EnumCyclicDistance implements LocalSimilarityFunction {
 	 *            Enum.
 	 * @return the result to apply the similarity.
 	 */
-	public double compute(Object o1, Object o2) throws NoApplicableSimilarityFunctionException {
+	public double compute(Object o1, Object o2) throws jcolibri.exception.NoApplicableSimilarityFunctionException{
 		if ((o1 == null) || (o2 == null))
 			return 0;
 		if(!(o1 instanceof Enum))
-			throw new NoApplicableSimilarityFunctionException(this.getClass(), o1.getClass());
+			throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), o1.getClass());
 		if(!(o2 instanceof Enum))
-			throw new NoApplicableSimilarityFunctionException(this.getClass(), o2.getClass());
+			throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), o2.getClass());
 		
 		Enum e1 = (Enum)o1;
 		Enum e2 = (Enum)o2;

@@ -1,18 +1,18 @@
 /**
  * InitializingException.java
  * jCOLIBRI2 framework. 
- * @author Juan A. Recio-Garcï¿½a.
+ * @author Juan A. Recio-García.
  * GAIA - Group for Artificial Intelligence Applications
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.exception;
+package jcolibri.exception;
 
 
 /**
  * Exception in the initialization of an object.
  * 
- * @author Juan A. Recio-Garcï¿½a
+ * @author Juan A. Recio-García
  * @version 2.0
  */
 public class InitializingException extends ExecutionException {

@@ -1,12 +1,10 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
+package jcolibri.method.retrieve.NNretrieval.similarity.local.similaritry;
 
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.MetricStringDistance;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.NormalizedStringDistance;
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-import 	com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.*;
+import jcolibri.exception.NoApplicableSimilarityFunctionException;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+import jcolibri.method.retrieve.NNretrieval.similarity.local.interfaces.*;
 
-public class MetricLCS  implements MetricStringDistance, NormalizedStringDistance, LocalSimilarityFunction {
+public class MetricLCS  implements MetricStringDistance, NormalizedStringDistance,LocalSimilarityFunction  {
 
     /**
 	 * 
@@ -18,8 +16,8 @@ public class MetricLCS  implements MetricStringDistance, NormalizedStringDistanc
      * Distance metric based on Longest Common Subsequence, computed as
      * 1 - |LCS(s1, s2)| / max(|s1|, |s2|).
      *
-     * @param 's1' The first string to compare.
-     * @param 's2' The second string to compare.
+     * @param s1 The first string to compare.
+     * @param s2 The second string to compare.
      * @return The computed distance metric value.
      * @throws NullPointerException if s1 or s2 is null.
      */

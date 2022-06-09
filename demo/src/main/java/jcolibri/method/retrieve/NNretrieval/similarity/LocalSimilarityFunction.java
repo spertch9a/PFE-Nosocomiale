@@ -1,19 +1,13 @@
 /**
  * LocalSimilarityFunction.java
  * jCOLIBRI2 framework. 
- * @author Juan A. Recio-Garcï¿½a.
+ * @author Juan A. Recio-García.
  * GAIA - Group for Artificial Intelligence Applications
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity;
+package jcolibri.method.retrieve.NNretrieval.similarity;
 
-
-
-
-
-
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
 
 /**
  * Defines the methods of a local similarity function.
@@ -29,7 +23,7 @@ public interface LocalSimilarityFunction {
    	 * @param queryObject object of the query
    	 * @return a value between [0..1]
    	 */
-    	public double compute(Object caseObject, Object queryObject) throws NoApplicableSimilarityFunctionException;
+    	public double compute(Object caseObject, Object queryObject) throws jcolibri.exception.NoApplicableSimilarityFunctionException;
 	
 	/**
 	 * Indicates if the function is applicable to two objects

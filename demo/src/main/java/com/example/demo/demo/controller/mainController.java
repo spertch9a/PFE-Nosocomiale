@@ -3,10 +3,13 @@ package com.example.demo.demo.controller;
 import com.example.demo.demo.model.Test1;
 import com.example.demo.demo.model.caseDescription;
 import com.example.demo.demo.model.caseSolution;
-import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRCase;
-import es.ucm.fdi.gaia.jcolibri.cbrcore.CBRQuery;
-import es.ucm.fdi.gaia.jcolibri.exception.ExecutionException;
+import jcolibri.cbrcore.CBRCase;
+import jcolibri.cbrcore.CBRQuery;
+import jcolibri.cbrcore.CaseComponent;
+import jcolibri.exception.ExecutionException;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Collection;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -31,8 +34,8 @@ public class mainController {
     @GetMapping(value = "/getACase")
     public CBRCase getAcase() {
         CBRCase mycase = new CBRCase();
-        mycase.setDescription(new caseDescription());
-        mycase.setSolution(new caseSolution());
+        mycase.setDescription((CaseComponent) new caseDescription());
+        mycase.setSolution((CaseComponent) new caseSolution());
         return mycase;
     }
 
@@ -42,21 +45,47 @@ public class mainController {
         //We may return it to the client in JSON format jsut for example
         System.out.println("All cases has ben executed");
         Test1 test1 = new Test1() {
-            @Override
-            public void cycle(CBRQuery cbrQuery) throws ExecutionException {
 
-            }
         };
         try {
             test1.configure();
             test1.preCycle();
-        } catch (ExecutionException e) {
+        } catch (jcolibri.exception.ExecutionException e) {
             e.printStackTrace();
         }
     }
 
 //SendsTrauma  code
+@RequestMapping(value = "/sendsTrauma/{k}", consumes = "application/json", produces = "application/json", method = RequestMethod.POST)
+public Collection<CBRCase> getaResponse(@RequestBody caseDescription requset, @PathVariable int k) throws ExecutionException {
+    System.out.println("/SendsTrauma IS CALLED");
+    Test1 test1 = new Test1();
+    try {
 
+        // Configure it
+        test1.configure();
+        // Run the precycle --> load the cases
+        test1.preCycle();
+
+        System.out.println("The received request is: " + requset);
+
+        CBRQuery query = new CBRQuery();
+        query.setDescription(requset);
+
+        // Run a cycle with the query
+        test1.cycle(query, k);
+
+        System.out.println("Cycle finished.");
+
+        // Run the postcycle
+        test1.postCycle();
+
+    } catch (Exception e) {
+        System.out.println(e.getMessage());
+        e.printStackTrace();
+    }
+    return test1.casestoreturn;
+}
 
     //caseAdaptionCode
 

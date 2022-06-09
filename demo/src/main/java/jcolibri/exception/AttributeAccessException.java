@@ -6,7 +6,7 @@
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.exception;
+package jcolibri.exception;
 
 /**
  * Exception for attribute access errors.
@@ -20,7 +20,7 @@ public class AttributeAccessException extends Exception {
 	{
 		super(msg);
 	}
-	
+
 	public AttributeAccessException(Exception ex)
 	{
 		super(ex);

@@ -1,12 +1,12 @@
 /**
  * FileIO.java
  * jCOLIBRI2 framework. 
- * @author Juan A. Recio-Garcï¿½a.
+ * @author Juan A. Recio-García.
  * GAIA - Group for Artificial Intelligence Applications
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.util;
+package jcolibri.util;
 
 import java.io.File;
 import java.io.InputStream;

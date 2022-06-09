@@ -6,7 +6,7 @@
  * http://gaia.fdi.ucm.es
  * 11/01/2007
  */
-package com.demo.infection.jcolibri.util;
+package jcolibri.util;
 
 import java.util.*;
 /**
@@ -49,7 +49,7 @@ public class ProgressController {
 	 */
 	public static void register(ProgressListener pl, Class c)
 	{
-		Collection<ProgressListener> l  = listeners.get(c);
+		Collection<ProgressListener> l = listeners.get(c);
 		if(l==null)
 		{
 			l = new ArrayList<ProgressListener>();
@@ -65,8 +65,6 @@ public class ProgressController {
 	{
 		listenersEverything.add(pl);
 	}
-
-
 	
 	/**
 	 * Deregisters a listener to recieve the progress of a concrete class.

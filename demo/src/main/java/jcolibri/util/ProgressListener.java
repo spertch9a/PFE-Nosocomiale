@@ -6,7 +6,7 @@
  * http://gaia.fdi.ucm.es
  * 11/01/2007
  */
-package com.demo.infection.jcolibri.util;
+package jcolibri.util;
 
 /**
  * Interface implemented by the listeners of a progress.

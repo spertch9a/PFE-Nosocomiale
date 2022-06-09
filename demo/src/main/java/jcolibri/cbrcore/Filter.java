@@ -1,16 +1,16 @@
 /**
  * Filter.java
  * jCOLIBRI2 framework. 
- * @author Juan A. Recio-Garcï¿½a.
+ * @author Juan A. Recio-García.
  * GAIA - Group for Artificial Intelligence Applications
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.cbrcore;
+package jcolibri.cbrcore;
 
 /**
  * Generic filtering class.  This will be used in a future.
- * @author Juan A. Recio-Garcï¿½a
+ * @author Juan A. Recio-García
  */
 public interface Filter
 {

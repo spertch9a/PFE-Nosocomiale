@@ -1,17 +1,17 @@
 /**
  * NoApplicableSiliarityFunctionException.java
  * jCOLIBRI2 framework. 
- * @author Juan A. Recio-Garcï¿½a.
+ * @author Juan A. Recio-García.
  * GAIA - Group for Artificial Intelligence Applications
  * http://gaia.fdi.ucm.es
  * 03/01/2007
  */
-package com.demo.infection.jcolibri.exception;
+package jcolibri.exception;
 
 /**
  * Trying to apply a similarity function to an incompatible attribute
  * 
- * @author Juan A. Recio-Garcï¿½a
+ * @author Juan A. Recio-García
  * @version 2.0
  */
 public class NoApplicableSimilarityFunctionException extends Exception {

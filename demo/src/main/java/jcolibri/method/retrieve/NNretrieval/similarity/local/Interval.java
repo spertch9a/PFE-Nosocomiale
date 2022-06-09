@@ -1,7 +1,7 @@
-package com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.local;
+package jcolibri.method.retrieve.NNretrieval.similarity.local;
 
-import com.demo.infection.jcolibri.exception.NoApplicableSimilarityFunctionException;
-import com.demo.infection.jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
+
 
 
 /**
@@ -31,13 +31,13 @@ public class Interval implements LocalSimilarityFunction {
 	 *            Number
 	 * @return result of apply the similarity function.
 	 */
-	public double compute(Object o1, Object o2) throws NoApplicableSimilarityFunctionException {
+	public double compute(Object o1, Object o2) throws jcolibri.exception.NoApplicableSimilarityFunctionException{
 		if ((o1 == null) || (o2 == null))
 			return 0;
 		if (!(o1 instanceof Number))
-			throw new NoApplicableSimilarityFunctionException(this.getClass(), o1.getClass());
+			throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), o1.getClass());
 		if (!(o2 instanceof Number))
-			throw new NoApplicableSimilarityFunctionException(this.getClass(), o2.getClass());
+			throw new jcolibri.exception.NoApplicableSimilarityFunctionException(this.getClass(), o2.getClass());
 
 
 		Number i1 = (Number) o1;

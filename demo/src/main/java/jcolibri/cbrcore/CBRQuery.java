@@ -6,9 +6,9 @@
  * http://gaia.fdi.ucm.es
  * 05/01/2007
  */
-package com.demo.infection.jcolibri.cbrcore;
+package jcolibri.cbrcore;
 
-import com.demo.infection.jcolibri.exception.AttributeAccessException;
+import jcolibri.exception.AttributeAccessException;
 
 
 /**
@@ -25,17 +25,17 @@ public class CBRQuery{
 
 	/**
 	 * Returns the description component.
-     * @return
-     */
-	public com.demo.infection.jcolibri.cbrcore.CaseComponent getDescription() {
+	 */
+	public CaseComponent getDescription() {
 		return description;
 	}
 
 	/**
 	 * Sets the description component.
+	 * @param description
 	 */
 	public void setDescription(CaseComponent description) {
-		this.description = description;
+		this.description = (CaseComponent) description;
 	}
 	
 	/**
@@ -43,15 +43,11 @@ public class CBRQuery{
 	 */
 	public Object getID()
 	{
-		
-		
-		if(this.description==null) return null;
-			
+		if(this.description==null)
+			return null;
 		else
 			try {
-				//JOptionPane.showConfirmDialog(null, "valeur : "+description.getIdAttribute().getValue(description).toString());
 				return description.getIdAttribute().getValue(description);
-				
 			} catch (AttributeAccessException e) {
 				return null;
 			}
