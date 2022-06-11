@@ -248,7 +248,9 @@ public class Test1 implements StandardCBRApplication {
             System.out.println(desc);
 
             MaladieInsertRepo mip = new MaladieInsertRepo();
-            mycase.setSolution(mip.manualSolutionMaking(desc.getId()));
+//            CaseComponent cc = (CaseComponent) new caseSolution();
+//            caseSolution cs = (caseSolution) cc;
+            mycase.setSolution((CaseComponent) mip.manualSolutionMaking(desc.getId()));
     //            mycase.setSolution(mip.manualSolutionMaking(desc.getId()));
 
             //end of modification
