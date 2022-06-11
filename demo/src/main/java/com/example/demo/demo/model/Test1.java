@@ -174,7 +174,7 @@ public class Test1 implements StandardCBRApplication {
         config.setDescriptionSimFunction((GlobalSimilarityFunction) new Average());
 
         // Execute NN
-        Collection<RetrievalResult> eval = NNScoringMethod.evaluateSimilarity(_caseBase.getCases(), cbrQuery, config);
+        Collection<RetrievalResult> eval = NNScoringMethod. evaluateSimilarity(_caseBase.getCases(), cbrQuery, config);
 
         // Select k cases
         Collection<CBRCase> selectedcases = SelectCases.selectTopK(eval, k);

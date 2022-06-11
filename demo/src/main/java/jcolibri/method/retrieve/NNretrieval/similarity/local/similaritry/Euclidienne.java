@@ -9,7 +9,7 @@ public class Euclidienne implements  LocalSimilarityFunction{
 	
 	@Override
 	public double compute(Object caseObject, Object queryObject) throws NoApplicableSimilarityFunctionException {
-		g=Math.sqrt(Math.abs((Math.pow((double) caseObject, 2))-(Math.pow((double) queryObject, 2))));
+ 		g=Math.sqrt(Math.abs((Math.pow((double) caseObject, 2))-(Math.pow((double) queryObject, 2))));
 		double m = (double)caseObject+(double)queryObject;
 		System.out.println(g/m);
 		return g/m;
