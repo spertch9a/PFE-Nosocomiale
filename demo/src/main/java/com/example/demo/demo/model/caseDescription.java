@@ -7,15 +7,21 @@ import jcolibri.cbrcore.CaseComponent;
 public class caseDescription implements CaseComponent {
 
     String id;
-    String nip;
-    String j;
-    String sa;
-    double t;
-    String ht;
-    double gb, crp, pct;
-    String sec,su,pyu,dsp, lu, brm, des,aus, msec,rx, tou, dys;
+    String nip; //in memoir it should be int
+    String j; //jour d'admission
+    String sa; // symptomes 48h apres admission
+    String ht; //hypo tension
+    String sec; //secretions
+    String su; //sonde urinaire
+    String pyu; //pyurie
+    String dsp; //douleur sus-pubienne
+    String fr,kt,abl,infkt, lu, brm, des, aus, msec,rx,tou,dys;
 
-    String fr, kt, abl, infkt;
+    double gb; //globules blancs shoud be int
+
+    double t; //temperature
+    double crp, pct; //marqeur d'inflammation, marqeur d'infection
+
 
     public String toString() {
         return "(" + id + ";" + nip + ";" + j + ";" + sa + ";" + t + ";" + ht + ";" + aus + ";" + des + ";" + kt + ";" + abl + ";" + infkt + ";" + sec + ";" + msec + ";" + tou + ";" + dys + ";" + su + ";" + pyu + ";" + brm + ";" + dsp + ";" + fr + ";" + lu + ";" + gb + ";" + crp + ";" + pct + ";" + rx + ")";

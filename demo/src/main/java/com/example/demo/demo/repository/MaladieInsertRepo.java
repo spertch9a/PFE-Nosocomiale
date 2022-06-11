@@ -8,20 +8,26 @@ import com.example.demo.demo.model.caseSolution;
 import java.sql.*;
 
 public class MaladieInsertRepo {
-    static final String DB_URL = "jdbc:mysql://localhost:3306/hopital";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/nosocomiale";
     static final String USER = "SA";
     static final String PASS = "THEPASSWORD";
     public caseSolution manualSolutionMaking(String idOfCase) {
         caseSolution solll = new caseSolution();
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-            String query =  "SELECT Classe, o2ther, Intubation, Sedation, osmotherapie, Ssi, Pic, Ventilation, supportHemo FROM malady WHERE id = ?";
+            String query =  "SELECT p, u, b, skt, autr, pas, conf FROM casebase WHERE id = ?";
             PreparedStatement st = conn.prepareStatement(query);
             st.setString(1,idOfCase);
             ResultSet rs = st.executeQuery();
             while (rs.next()){
-
-//                solll.setId(idOfCase);
+                     solll.setId(idOfCase);
+                     solll.setAutr(rs.getInt("autr"));
+                solll.setB(rs.getInt("b"));
+                solll.setConf(rs.getInt("conf"));
+                solll.setSkt(rs.getInt("skt"));
+                solll.setP(rs.getInt("p"));
+                solll.setPas(rs.getInt("pas"));
+                solll.setU(rs.getInt("u"));
 //                solll.setClasse(rs.getString("classe"));
 //                solll.setIntubation(rs.getString("intubation"));
 //                solll.setOsmotherapie(rs.getString("osmotherapie"));
@@ -112,7 +118,4 @@ public class MaladieInsertRepo {
 
     }
 
-    public static void main(String[] args) {
-//
-    }
 }

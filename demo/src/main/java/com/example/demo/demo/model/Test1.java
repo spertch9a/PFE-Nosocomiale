@@ -75,100 +75,73 @@ public class Test1 implements StandardCBRApplication {
         //SimilConfigPanel similConfig;
         LocalSimilarityFunction function;
 
-        attribute = new Attribute("sa", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
         attribute = new Attribute("t", caseDescription.class);
+        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
+        attribute = new Attribute("pct", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-
-        attribute = new Attribute("ht", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-
-
-        attribute = new Attribute("aus", caseDescription.class);
+        attribute = new Attribute("crp", caseDescription.class);
+        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
+        attribute = new Attribute("gb", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
 
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT14");
+//        config.setWeight(attribute, 1.0);
+
+        attribute = new Attribute("sa", caseDescription.class);
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal()); //fonction de similarite local
+
+        attribute = new Attribute("ht", caseDescription.class);
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
+        attribute = new Attribute("aus", caseDescription.class);
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("des", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
-        //config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT9");
         attribute = new Attribute("kt", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());//
 
-        config.setWeight(attribute, 0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT22");
         attribute = new Attribute("abl", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());//
 
-        config.setWeight(attribute, 0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT23");
         attribute = new Attribute("infkt", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
-        config. setWeight(attribute,0.1);
         attribute = new Attribute("sec", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
         config.setWeight(attribute,0.1);
         //JOptionPane.showConfirmDialog(null, "DEBUT10");
         attribute = new Attribute("msec", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
-        //config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT11");
         attribute = new Attribute("tou", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT12");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("dys", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT13");
-        //JOptionPane.showConfirmDialog(null, "DEBUT15");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("su", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT16");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("pyu", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT17");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("brm", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT18");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
+
         attribute = new Attribute("dsp", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT19");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("lu", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT20");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("fr", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        //config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT21");
-        attribute = new Attribute("gb", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        //config.setWeight(attribute, 0.1);
-        //JOptionPane.showConfirmDialog(null, "FIN5");
-        //JOptionPane.showConfirmDialog(null, "DEBUT6");
-        attribute = new Attribute("crp", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        //JOptionPane.showConfirmDialog(null, "FIN6");
-        //config.setWeight(attribute,0.1);
-        //config.setWeight(attribute, similConfig.getWeight());
-        //JOptionPane.showConfirmDialog(null, "DEBUT7");
-        attribute = new Attribute("pct", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute, 1.0);
-        //JOptionPane.showConfirmDialog(null, "DEBUT8");
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
+
         attribute = new Attribute("rx", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
-        config.setWeight(attribute, 0.1);
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
 
         config.setDescriptionSimFunction((GlobalSimilarityFunction) new Average());
@@ -271,23 +244,12 @@ public class Test1 implements StandardCBRApplication {
             CBRCase mycase = rr_case.get_case();
             //for each case i get the description
             caseDescription desc = (caseDescription) mycase.getDescription();
-            //modff
-            CaseComponent casss = mycase.getDescription();
-            System.out.println("CASSS");
-            casss.getClass().toString();
-            System.out.println("--------------");
-            System.out.println("CASTED CASS");
-            System.out.println((caseDescription)casss);
-            //end modff
-
             System.out.println("Case description");
             System.out.println(desc);
-            //i get the solution
-            //beggining of modifications
-            //before getting it i will retrieve the id and modify the id and intead change it from the database since i have the id
-            MaladieInsertRepo mip = new MaladieInsertRepo();
 
-//            mycase.setSolution(mip.manualSolutionMaking(desc.getId()));
+            MaladieInsertRepo mip = new MaladieInsertRepo();
+            mycase.setSolution(mip.manualSolutionMaking(desc.getId()));
+    //            mycase.setSolution(mip.manualSolutionMaking(desc.getId()));
 
             //end of modification
             caseSolution sol = (caseSolution) mycase.getSolution();
