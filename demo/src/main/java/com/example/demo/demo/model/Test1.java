@@ -67,27 +67,30 @@ public class Test1 implements StandardCBRApplication {
 
 
     public void cycle(CBRQuery cbrQuery, int k) throws ExecutionException {
-        // Obtain configuration for KNN
 
-        //similarityDialog.setVisible(true);
+        // Obtain configuration for KNN
         NNConfig config = new NNConfig();
         Attribute attribute;
+
         //SimilConfigPanel similConfig;
         LocalSimilarityFunction function;
 
         attribute = new Attribute("t", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
+
         attribute = new Attribute("pct", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());        //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
+
         attribute = new Attribute("crp", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
+
         attribute = new Attribute("gb", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Euclidienne());
 
 //        config.setWeight(attribute, 1.0);
 
         attribute = new Attribute("sa", caseDescription.class);
-        config.addMapping(attribute, (LocalSimilarityFunction) new Equal()); //fonction de similarite local
+        config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
         attribute = new Attribute("ht", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
@@ -109,9 +112,8 @@ public class Test1 implements StandardCBRApplication {
 
         attribute = new Attribute("sec", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
-
         config.setWeight(attribute,0.1);
-        //JOptionPane.showConfirmDialog(null, "DEBUT10");
+
         attribute = new Attribute("msec", caseDescription.class);
         config.addMapping(attribute, (LocalSimilarityFunction) new Equal());
 
@@ -151,6 +153,7 @@ public class Test1 implements StandardCBRApplication {
 
         // Select k cases
         Collection<CBRCase> selectedcases = SelectCases.selectTopK(eval, k);
+
         casestoreturn = selectedcases;
 //printing
 //        System.out.println("PRINTING");
